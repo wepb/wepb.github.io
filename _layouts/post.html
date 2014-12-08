@@ -1,0 +1,18 @@
+---
+layout: default
+---
+  <div id="post">
+    <h2>Treffen am {{ page.event-date | date: "%e. %B" }}</h2>
+
+    <p>
+      Dieses Treffen fand am
+      {{ page.event-date | date: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>" }}      
+      {{ page.location-text }} statt.
+    </p>
+
+    <h3 id="themen">Themen</h3>
+
+    <p>Wir hatten folgende Vorträge für euch organisiert:</p>
+
+    {{ content }}
+  </div>

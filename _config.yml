@@ -1,0 +1,12 @@
+# Site settings
+title: Webentwickler Paderborn
+email: mail@webentwickler-paderborn.de
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://webentwickler-paderborn.de" # the base hostname & protocol for your site
+twitter_username: we_pb
+github_username: wepb
+
+# Build settings
+markdown: kramdown
+encoding: utf-8

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section id="aboutus">
+  {% include about.html %}
+</section>
+
+{% assign next_event = site.posts|first %}
+<section id="next-meeting">
+  <h2>Nächstes Treffen</h2>
+  
+  <p>
+    Das nächste Treffen findet am
+    {{ next_event.event-date | date: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>" }}
+    {{ next_event.location-text }} statt.
+  </p>
+
+  <h3 id="themen">Themen</h3>
+
+  <p>Wir haben folgende Vorträge für euch organisiert:</p>
+
+  {{ next_event.content }}
+</section>
+
+<section id="archive">
+  <h2>Letzte Treffen mit Vortragsfolien und Fotos</h2>
+  <ul>
+    {% for post in site.posts %}
+      {% unless forloop.first %}
+        <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} ({{ post.topics}})</a></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="contact">
+  {% include contact.html %}
+</section>
