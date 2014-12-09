@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
+
+{% assign date = page.event-date %}
+{% assign month = date | date: "%-m" | minus: '1' %}
+{% assign monthname = site.monthnames[month] %}
+{% assign weekday = date | date: "%-w" | minus: '1' %}
+{% assign weekdayname = site.weekdays[weekday] %}
+
   <div id="post">
-    <h2>Treffen am {{ page.event-date | date: "%e. %B" }}</h2>
+    <h2>Treffen am {{ date | date: '%e.' }} {{ monthname }}</h2>
 
     <p>
-      Dieses Treffen fand am
-      {{ page.event-date | date: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>" }}      
+      Dieses Treffen fand am <em>{{ weekdayname }}</em>,
+      den <strong>{{ date | date: "%e." }} {{ monthname }} {{ date | date: "%Y" }}</strong>
+      um <strong>{{ date | date: "%H" }} Uhr</strong>
       {{ page.location-text }} statt.
     </p>
 
