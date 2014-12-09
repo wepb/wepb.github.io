@@ -7,12 +7,19 @@ layout: default
 </section>
 
 {% assign next_event = site.posts|first %}
+{% assign date = next_event.event-date %}
+{% assign month = date | date: "%-m" | minus: '1' %}
+{% assign monthname = site.monthnames[month] %}
+{% assign weekday = date | date: "%-w" | minus: '1' %}
+{% assign weekdayname = site.weekdays[weekday] %}
+
 <section id="next-meeting">
   <h2>Nächstes Treffen</h2>
   
   <p>
-    Das nächste Treffen findet am
-    {{ next_event.event-date | date: "<em>%A</em>, den <strong>%e. %B %Y</strong> um <strong>%H Uhr</strong>" }}
+    Das nächste Treffen findet am <em>{{ weekdayname}}</em>,
+    den <strong>{{ date | date: "%e." }} {{ monthname }} {{ date | date: "%Y" }}</strong>
+    um <strong>{{ date | date: "%H" }} Uhr</strong>
     {{ next_event.location-text }} statt.
   </p>
 
