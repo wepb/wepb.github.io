@@ -9,9 +9,8 @@ Die Webentwickler Paderborn sind eine private Initiative von Adrian Fahle, Johan
 
 ### Verantwortlich:
 
-Moritz Breit <br />
-Karl-Wehrhan-Str. 17 <br />
-32758 Detmold
+Johannes Lattrich<br />
+Uhlenstr. 22<br />
+33098 Paderborn
 
-**Telefon:** 05231 5004000<br />
-**Email:** mail@moritz-breit.de
+**Email:** <script>document.write('<a href="mailto:mai' + 'l@w' + 'ebentwickler-paderborn.de">mai' + 'l@w' + 'ebentwickler-paderborn.de</a>');</script>
