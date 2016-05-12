@@ -10,7 +10,7 @@ topics: Bitcoins & Blockchain; SAP HANA Cloud
 categories: events
 ---
 
-* Bitcoin und Blockchain - wie funktioniert das alles eigentlich? (Stefan Berens)
+* Bitcoin und Blockchain - Einführung in Kryptowährungen und -technologien (Stefan Berens)
 * SAP HANA Cloud - Vorstellung der Möglichkeiten (Oliver Schreiber und Klaus Wiethoff)
 
 Weitere Vorschläge für Themen und Referenten werden immer gerne gesehen!
