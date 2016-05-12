@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://webentwickler-paderborn.de" # the base hostname & protocol for your site
 twitter_username: we_pb
 github_username: wepb
+timezone: Europe/Berlin
 
 # Build settings
 markdown: kramdown
